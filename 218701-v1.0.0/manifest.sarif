@@ -1,0 +1,96 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 218701,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2016-09-13",
+        "language": "csharp",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "input : direct user input in string\nXpath replace char\nsink : SQL query",
+        "state": "bad"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/cwe_89__I_readline__F_xml_encode__S_SQL-Injection__EQ_sqlite__1-3.2_File1.cs"
+          },
+          "length": 2503,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "c81b30d6de40095c1263d1edb8a0bfb6b057d30751ef8fb10afe4929dd9f4cef"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+            {
+              "id": "89",
+              "name": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "CWE-89",
+          "message": {
+            "text": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cwe_89__I_readline__F_xml_encode__S_SQL-Injection__EQ_sqlite__1-3.2_File1.cs",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 61
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "index": 0
+              },
+              "id": "89",
+              "index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 231053,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2016-09-13",
+        "language": "csharp",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "input : direct user input in string\nfiltering : remove all \"../\" in path\nsink : check if a file exists",
+        "state": "good"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/cwe_22__I_readline__F_good_regex_parent_dir_path__S_file_exists__0_File1.cs"
+          },
+          "length": 1634,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "8b2cad59cf479f3dddf682e8c3e533e9e6aff49c5588d81eae6064d3c956d845"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+
+          ]
+        }
+      ],
+      "results": [
+
+      ]
+    }
+  ]
+}

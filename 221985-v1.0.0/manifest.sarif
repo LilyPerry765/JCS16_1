@@ -1,0 +1,96 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 221985,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2016-09-13",
+        "language": "csharp",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "Command line args\nno filtering\nsink : LDAP Query\nLDAP Query",
+        "state": "bad"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/cwe_90__I_args__F_no_filtering__S_ldap__EQ_ldap__1-6.7_File1.cs"
+          },
+          "length": 2778,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "3f499813633489d36a40b7c6a085dcbe264d7e389881d56f3a3d8000c975593c"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+            {
+              "id": "90",
+              "name": "Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "CWE-90",
+          "message": {
+            "text": "Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection')."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cwe_90__I_args__F_no_filtering__S_ldap__EQ_ldap__1-6.7_File1.cs",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 57
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "index": 0
+              },
+              "id": "90",
+              "index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

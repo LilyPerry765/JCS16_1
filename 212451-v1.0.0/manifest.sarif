@@ -1,0 +1,75 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 212451,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2016-09-13",
+        "language": "csharp",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "input : shell commands\nfiltering : check if there is only numbers\nsink : SQL query",
+        "state": "good"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/cwe_89__I_shell_commands__F_func_preg_match-only_numbers__S_SQL-Injection__EQ_mysql__1-22_File1.cs"
+          },
+          "length": 3244,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "dd907f4450da435279400836d66cdbe7ddd850f9930993d18de7e273023951e5"
+          }
+        },
+        {
+          "location": {
+            "uri": "src/cwe_89__I_shell_commands__F_func_preg_match-only_numbers__S_SQL-Injection__EQ_mysql__1-22_File2.cs"
+          },
+          "length": 1503,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "c55921f5219839de9aa4d033c6b9f01c2d64cc164d5c982158bbca9be31892e8"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+
+          ]
+        }
+      ],
+      "results": [
+
+      ]
+    }
+  ]
+}

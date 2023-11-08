@@ -1,0 +1,75 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 222680,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2016-09-13",
+        "language": "csharp",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "Hardcoded string input\nfiltering : remove semi-colon and all invalid filenames and chars in paths\nsink : LDAP Query\nLDAP Query",
+        "state": "good"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/cwe_90__I_hardcoded_string_input__F_invalid_filenames_chars_semi-colon_path__S_ldap__EQ_ldap__1-21_File1.cs"
+          },
+          "length": 3050,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "4d157f9e6be9a4f26896c7a69ddd90719112520fc3a4fa0a84ef6b740728b185"
+          }
+        },
+        {
+          "location": {
+            "uri": "src/cwe_90__I_hardcoded_string_input__F_invalid_filenames_chars_semi-colon_path__S_ldap__EQ_ldap__1-21_File2.cs"
+          },
+          "length": 1547,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "32e3e9964e4258645a03cad19fa0bee9b8bdaa44755a3fa62324eaa06870864c"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+
+          ]
+        }
+      ],
+      "results": [
+
+      ]
+    }
+  ]
+}

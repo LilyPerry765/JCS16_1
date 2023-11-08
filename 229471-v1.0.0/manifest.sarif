@@ -1,0 +1,106 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 229471,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2016-09-13",
+        "language": "csharp",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "Command line args\nno filtering\nsink : check if a file exists",
+        "state": "bad"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/cwe_22__I_args__F_no_filtering__S_file_exists__1-22_File1.cs"
+          },
+          "length": 1639,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "97fabdb468aada176309f886fd105757a9bd2f30e42bbcaaa29fe7dad266a49e"
+          }
+        },
+        {
+          "location": {
+            "uri": "src/cwe_22__I_args__F_no_filtering__S_file_exists__1-22_File2.cs"
+          },
+          "length": 1469,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "d58c4b259605c5e5caa99e18962013eed1af7ba7090d2bb461e890c5241f62ea"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+            {
+              "id": "22",
+              "name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "CWE-22",
+          "message": {
+            "text": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/cwe_22__I_args__F_no_filtering__S_file_exists__1-22_File1.cs",
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 53
+                }
+              }
+            }
+          ],
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "index": 0
+              },
+              "id": "22",
+              "index": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

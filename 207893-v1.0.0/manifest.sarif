@@ -1,0 +1,75 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "properties": {
+        "id": 207893,
+        "version": "1.0.0",
+        "type": "source code",
+        "status": "candidate",
+        "submissionDate": "2016-09-13",
+        "language": "csharp",
+        "author": "Bertrand Stivalet and Aurelien Delaitre",
+        "description": "Hardcoded string input\nXpath replace char\nconstruction : concatenation with simple quote",
+        "state": "good"
+      },
+      "tool": {
+        "driver": {
+          "name": "SARD - SAMATE",
+          "fullName": "Software Assurance Reference Dataset Project",
+          "informationUri": "https://samate.nist.gov/SARD/",
+          "version": "5.0.0",
+          "organization": "NIST",
+          "supportedTaxonomies": [
+            {
+              "name": "CWE",
+              "index": 0
+            }
+          ]
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "src/cwe_89__I_hardcoded_string_input__F_xml_encode__S_select_from-concatenation_simple_quote__EQ_sql_server__1-21_File1.cs"
+          },
+          "length": 2690,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "6466bb09ec33829e5edd61967002dd3c97ea841b794746bcaecc14adbdb0412e"
+          }
+        },
+        {
+          "location": {
+            "uri": "src/cwe_89__I_hardcoded_string_input__F_xml_encode__S_select_from-concatenation_simple_quote__EQ_sql_server__1-21_File2.cs"
+          },
+          "length": 1509,
+          "sourceLanguage": "csharp",
+          "hashes": {
+            "sha-256": "b12ff149a2bd42f37b2492e6d572ebed3ad450ef934af4db4d577b46ac8e4cca"
+          }
+        }
+      ],
+      "taxonomies": [
+        {
+          "name": "CWE",
+          "version": "4.6",
+          "informationUri": "https://cwe.mitre.org/data/published/cwe_v4.6.pdf",
+          "downloadUri": "https://cwe.mitre.org/data/xml/cwec_v4.6.xml.zip",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "isComprehensive": false,
+          "taxa": [
+
+          ]
+        }
+      ],
+      "results": [
+
+      ]
+    }
+  ]
+}
